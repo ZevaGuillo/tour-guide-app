@@ -42,7 +42,8 @@
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/inputName"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:srcCompat="@drawable/nice" />
+        app:srcCompat="@drawable/nice"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/topText"
@@ -73,13 +74,13 @@
         android:inputType="text"
         android:padding="16dp"
         android:textColorHint="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_acceder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_acceder"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
