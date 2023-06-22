@@ -2,10 +2,14 @@ package com.example.tour_guide_app.information;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.tour_guide_app.DataBase.PlaceDBHelper;
+import com.example.tour_guide_app.MainActivity;
 import com.example.tour_guide_app.R;
+import com.example.tour_guide_app.comments.CommentsActivity;
+import com.example.tour_guide_app.maps.MapsActivity;
 
 import androidx.appcompat.widget.Toolbar;
 
@@ -30,6 +34,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import java.util.List;
+import java.util.Map;
 
 
 public class InformationActivity extends AppCompatActivity {
@@ -153,13 +158,18 @@ public class InformationActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
         if (itemId == R.id.menu_opcion1) {
-            // Lógica para la opción 1
+            Intent intent = new Intent(InformationActivity.this, InformationActivity.class);
+            startActivity(intent);
             return true;
         } else if (itemId == R.id.menu_opcion2) {
             // Lógica para la opción 2
+            Intent intent = new Intent(InformationActivity.this, CommentsActivity.class);
+            startActivity(intent);
             return true;
         } else if (itemId == R.id.menu_opcion3) {
             // Lógica para la opción 3
+            Intent intent = new Intent(InformationActivity.this, MapsActivity.class);
+            startActivity(intent);
             return true;
         } else {
             return super.onOptionsItemSelected(item);

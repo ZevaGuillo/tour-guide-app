@@ -23,6 +23,8 @@
         <activity
             android:name=".information.InformationActivity"
             android:exported="false" />
+        <activity android:name=".information.DescripcionActivity"
+            android:exported="false"/>
         <activity
             android:name=".comments.CommentsActivity"
             android:exported="false" />
@@ -36,4 +38,5 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>
