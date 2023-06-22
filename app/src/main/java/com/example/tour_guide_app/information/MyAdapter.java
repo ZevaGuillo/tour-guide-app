@@ -23,7 +23,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private List<MyData> dataList;
     private int[] staticImages = {R.drawable.malecon2000, R.drawable.guayarte,R.drawable.parquesamanes,
             R.drawable.cerrosantana, R.drawable.parquehistorico, R.drawable.parqueseminario, R.drawable.restaurantepatio,
-            R.drawable.casajulian, R.drawable.noesushi, R.drawable.catedral
+            R.drawable.casajulian, R.drawable.noesushi, R.drawable.catedral, R.drawable.sagradocorazon, R.drawable.zooelpantanal,
+            R.drawable.plazalagos, R.drawable.menestrasdelnegro, R.drawable.maleconsalado, R.drawable.museomunicipal
     };
 
     private List<MyData> dataListOriginal;
