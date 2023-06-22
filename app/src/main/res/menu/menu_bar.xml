@@ -1,0 +1,34 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/searc_viewcategoria"
+        android:title="Buscar"
+        android:icon="@drawable/icon_menu_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_opcion1"
+        android:title="@string/opcion_informacion"
+        android:icon="@drawable/place"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_opcion2"
+        android:title="@string/opcion_comentarios"
+        android:icon="@drawable/comment"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_opcion3"
+        android:title="@string/opcion_mapa"
+        android:icon="@drawable/map_24"
+        app:showAsAction="never"
+        />
+
+</menu>
+
