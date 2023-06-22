@@ -41,9 +41,9 @@
         android:layout_height="0dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/inputName"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:srcCompat="@drawable/nice"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:srcCompat="@drawable/nice" />
 
     <TextView
         android:id="@+id/topText"
@@ -83,28 +83,12 @@
         android:id="@+id/btn_acceder"
         android:layout_width="347dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/round_bg"
         android:text="Acceder"
         android:textColorHighlight="@color/colorPrimary"
         android:textColorLink="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Informacón"
-        android:textColor="@color/colorPrimary"
-        android:textColorHighlight="@color/colorPrimary"
-        android:textColorLink="@color/colorPrimary"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="614dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
