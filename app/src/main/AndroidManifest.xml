@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tourguideapp"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAvOpX4P4xdBnboUYZR73Ii3Dpx6yDDAVo" />
+
+        <activity
+            android:name=".maps.MapsActivity"
+            android:exported="false" />
         <activity
             android:name=".comments.CommentsActivity"
             android:exported="false" />
