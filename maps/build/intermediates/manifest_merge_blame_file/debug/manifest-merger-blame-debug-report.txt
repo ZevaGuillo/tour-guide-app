@@ -1,0 +1,158 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.maps"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml
+10
+11    <!-- Include required permissions for Google Maps API to run. -->
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:23:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
+13-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:24:22-64
+14
+15    <uses-feature
+15-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+16        android:glEsVersion="0x00020000"
+16-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+17        android:required="true" />
+17-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+18
+19    <queries>
+19-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+20
+21        <!-- Needs to be explicitly declared on Android R+ -->
+22        <package android:name="com.google.android.apps.maps" />
+22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+23    </queries>
+24
+25    <permission
+25-->[androidx.core:core:1.9.0] C:\Users\Guillermo\.gradle\caches\transforms-3\74708d563e2b641263a97260290ae995\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.example.maps.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.9.0] C:\Users\Guillermo\.gradle\caches\transforms-3\74708d563e2b641263a97260290ae995\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.9.0] C:\Users\Guillermo\.gradle\caches\transforms-3\74708d563e2b641263a97260290ae995\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.example.maps.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.9.0] C:\Users\Guillermo\.gradle\caches\transforms-3\74708d563e2b641263a97260290ae995\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.9.0] C:\Users\Guillermo\.gradle\caches\transforms-3\74708d563e2b641263a97260290ae995\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:4:5-40:19
+32        android:allowBackup="true"
+32-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:5:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.9.0] C:\Users\Guillermo\.gradle\caches\transforms-3\74708d563e2b641263a97260290ae995\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:icon="@mipmap/ic_launcher"
+36-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:6:9-43
+37        android:label="@string/app_name"
+37-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:7:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:8:9-54
+39        android:supportsRtl="true"
+39-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:9:9-35
+40        android:testOnly="true"
+41        android:theme="@style/Theme.Tourguideapp" >
+41-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:10:9-50
+42
+43        <!--
+44             TODO: Before you run your application, you need a Google Maps API key.
+45
+46             To get one, follow the directions here:
+47
+48                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+49
+50             Once you have your API key (it starts with "AIza"), define a new property in your
+51             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+52             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+53        -->
+54        <meta-data
+54-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:23:9-25:71
+55            android:name="com.google.android.geo.API_KEY"
+55-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:24:13-58
+56            android:value="AIzaSyAvOpX4P4xdBnboUYZR73Ii3Dpx6yDDAVo" />
+56-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:25:13-68
+57
+58        <activity
+58-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:27:9-30:59
+59            android:name="com.example.maps.MapsActivity"
+59-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:28:13-41
+60            android:exported="false"
+60-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:29:13-37
+61            android:label="@string/title_activity_maps" />
+61-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:30:13-56
+62        <activity
+62-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:31:9-39:20
+63            android:name="com.example.maps.MainActivity"
+63-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:32:13-41
+64            android:exported="true" >
+64-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:33:13-36
+65            <intent-filter>
+65-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:34:13-38:29
+66                <action android:name="android.intent.action.MAIN" />
+66-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:35:17-69
+66-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:35:25-66
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:37:17-77
+68-->C:\Users\Guillermo\AndroidStudioProjects\tourguideapp\maps\src\main\AndroidManifest.xml:37:27-74
+69            </intent-filter>
+70        </activity>
+71        <!-- Needs to be explicitly declared on P+ -->
+72        <uses-library
+72-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+73            android:name="org.apache.http.legacy"
+73-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+74            android:required="false" />
+74-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Guillermo\.gradle\caches\transforms-3\9c7b202418c645e986a705aae570a893\transformed\play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+75
+76        <activity
+76-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Guillermo\.gradle\caches\transforms-3\e67a4e39eba164bf549e3a0cba0f8f6b\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+77            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+77-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Guillermo\.gradle\caches\transforms-3\e67a4e39eba164bf549e3a0cba0f8f6b\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Guillermo\.gradle\caches\transforms-3\e67a4e39eba164bf549e3a0cba0f8f6b\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Guillermo\.gradle\caches\transforms-3\e67a4e39eba164bf549e3a0cba0f8f6b\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Guillermo\.gradle\caches\transforms-3\e6f488a426f7e3896896c24cdb550358\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Guillermo\.gradle\caches\transforms-3\e6f488a426f7e3896896c24cdb550358\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Guillermo\.gradle\caches\transforms-3\e6f488a426f7e3896896c24cdb550358\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Guillermo\.gradle\caches\transforms-3\4a5b2edcbd5da0d8cdb670e5afc30eea\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Guillermo\.gradle\caches\transforms-3\4a5b2edcbd5da0d8cdb670e5afc30eea\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+87            android:authorities="com.example.maps.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Guillermo\.gradle\caches\transforms-3\4a5b2edcbd5da0d8cdb670e5afc30eea\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Guillermo\.gradle\caches\transforms-3\4a5b2edcbd5da0d8cdb670e5afc30eea\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Guillermo\.gradle\caches\transforms-3\4a5b2edcbd5da0d8cdb670e5afc30eea\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Guillermo\.gradle\caches\transforms-3\4a5b2edcbd5da0d8cdb670e5afc30eea\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Guillermo\.gradle\caches\transforms-3\4a5b2edcbd5da0d8cdb670e5afc30eea\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Guillermo\.gradle\caches\transforms-3\151d3c67094f3a3c06cab8ddfd335d35\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Guillermo\.gradle\caches\transforms-3\151d3c67094f3a3c06cab8ddfd335d35\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Guillermo\.gradle\caches\transforms-3\151d3c67094f3a3c06cab8ddfd335d35\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+95        </provider>
+96    </application>
+97
+98</manifest>
