@@ -11,18 +11,19 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import android.view.View;
 import android.widget.SearchView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+
 import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,11 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
     MyAdapter adapter;
 
-    Map<String, List<Integer>> categoryImageMap = new HashMap<>();
 
     TextView textViewWelcome;
 
-    private List<MyData> dataList; // Lista de datos de tu base de datos
+    // Lista de datos de tu base de datos
     private List<MyData> dataListOriginal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,27 +53,6 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new PlaceDBHelper(this);
         db = dbHelper.getWritableDatabase();
 
-        Map<String, List<Integer>> categoryImageMap = new HashMap<>();
-
-        List<Integer> parqueImages = new ArrayList<>();
-        parqueImages.add(R.drawable.malecon2000);
-        parqueImages.add(R.drawable.parquehistorico);
-        parqueImages.add(R.drawable.parquesamanes);
-        parqueImages.add(R.drawable.parqueseminario);
-
-        categoryImageMap.put("Parque", parqueImages);
-
-        List<Integer> monumentoImages = new ArrayList<>();
-        monumentoImages.add(R.drawable.cerrosantana);
-        monumentoImages.add(R.drawable.catedral);
-
-        categoryImageMap.put("Monumento", monumentoImages);
-
-        List<Integer> restauranteImages = new ArrayList<>();
-        restauranteImages.add(R.drawable.restaurantepatio);
-        restauranteImages.add(R.drawable.casajulian);
-        restauranteImages.add(R.drawable.noesushi);
-        categoryImageMap.put("Monumento", restauranteImages);
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         // Crea y asigna un GridLayoutManager con 2 columnas al RecyclerView
@@ -84,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Crea y asigna el adaptador al RecyclerView
-        adapter = new MyAdapter(dataList, categoryImageMap);
+        adapter = new MyAdapter(dataList);
         recyclerView.setAdapter(adapter);
 
     }
@@ -142,20 +121,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 // Lógica para manejar la búsqueda
-                return true;
+                return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                // Lógica para manejar el cambio de texto en la búsqueda
-                /*adapter.filtrado(newText);
+                adapter.searchQuery = newText;
+                adapter.notifyDataSetChanged();
+
                 if (TextUtils.isEmpty(newText)) {
                     textViewWelcome.setVisibility(View.VISIBLE);
                 } else {
                     textViewWelcome.setVisibility(View.GONE);
-                }*/
-                adapter.searchQuery = newText;
-                adapter.filtrado(newText);
+                }
                 return true;
             }
         });
@@ -181,5 +159,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
-
