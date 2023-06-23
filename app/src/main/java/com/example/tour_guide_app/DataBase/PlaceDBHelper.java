@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class PlaceDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "lugares.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
 
     public PlaceDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
