@@ -18,21 +18,11 @@
 
             <TextView
                 android:id="@+id/texto_usuariomostrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="start|fill_horizontal"
-                android:text="Usuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/texto_titulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="fill_horizontal"
-                android:text="Deja tu valoración"
-                android:textSize="24dp"
-                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView

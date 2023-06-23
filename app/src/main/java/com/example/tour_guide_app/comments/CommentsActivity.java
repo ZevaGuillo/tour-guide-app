@@ -16,10 +16,14 @@ public class CommentsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_comments);
 
         String nombre = getIntent().getStringExtra("nombre");
-
-
         TextView textView = findViewById(R.id.texto_lugarmostrar);
         textView.setText(nombre);
+
+
+
+
+
+
 
     }
 }

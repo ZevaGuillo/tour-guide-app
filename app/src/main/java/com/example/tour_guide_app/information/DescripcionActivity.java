@@ -2,18 +2,24 @@ package com.example.tour_guide_app.information;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.tour_guide_app.DataBase.PlaceDBHelper;
 import com.example.tour_guide_app.MainActivity;
 import com.example.tour_guide_app.R;
 import com.example.tour_guide_app.comments.CommentsActivity;
 
 public class DescripcionActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,14 +54,21 @@ public class DescripcionActivity extends AppCompatActivity {
 
         Button boton_comentarios = findViewById(R.id.btn_comentarios);
 
+
+
         boton_comentarios.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
+
                 Intent intent = new Intent(DescripcionActivity.this, CommentsActivity.class);
+
                 intent.putExtra("nombre", nombre);
                 startActivity(intent);
             }
         });
 
     }
+
 }
+
+

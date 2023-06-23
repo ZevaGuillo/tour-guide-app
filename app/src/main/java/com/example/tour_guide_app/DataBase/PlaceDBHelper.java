@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class PlaceDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "lugares.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     public PlaceDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -40,10 +40,10 @@ public class PlaceDBHelper extends SQLiteOpenHelper {
                 "_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "comentario TEXT, " +
                 "puntuacion FLOAT, " +
-                "usuario_id INTEGER, " +
-                "lugar_id INTEGER, " +
-                "FOREIGN KEY(usuario_id) REFERENCES usuarios(_id), " +
-                "FOREIGN KEY(lugar_id) REFERENCES lugares(_id))";
+                "usuario_nombre INTEGER, " +
+                "lugar_nombre INTEGER, " +
+                "FOREIGN KEY(usuario_nombre) REFERENCES usuarios(nombre), " +
+                "FOREIGN KEY(lugar_nombre) REFERENCES lugares(nombre))";
         db.execSQL(createTableValoracionesQuery);
 
 
@@ -257,6 +257,7 @@ public class PlaceDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
 
     }
 
