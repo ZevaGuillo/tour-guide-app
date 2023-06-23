@@ -2,11 +2,16 @@ package com.example.tour_guide_app.information;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.tour_guide_app.MainActivity;
 import com.example.tour_guide_app.R;
+import com.example.tour_guide_app.comments.CommentsActivity;
 
 public class DescripcionActivity extends AppCompatActivity {
 
@@ -40,6 +45,16 @@ public class DescripcionActivity extends AppCompatActivity {
         textViewdescripcion.setText(descripcion);
         textViewprecios.setText(precios);
         textViewhorarios.setText(horarios);
+
+        Button boton_comentarios = findViewById(R.id.btn_comentarios);
+
+        boton_comentarios.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(DescripcionActivity.this, CommentsActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
