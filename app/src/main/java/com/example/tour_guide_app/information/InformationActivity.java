@@ -41,12 +41,8 @@ public class InformationActivity extends AppCompatActivity {
 
     private PlaceDBHelper dbHelper;
     private SQLiteDatabase db;
-
     MyAdapter adapter;
-
-
     TextView textViewWelcome;
-
     // Lista de datos de tu base de datos
     private List<MyData> dataListOriginal;
 
@@ -55,7 +51,7 @@ public class InformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
 
-        //Menu
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
