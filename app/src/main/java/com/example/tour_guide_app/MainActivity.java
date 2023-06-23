@@ -56,29 +56,21 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
-
             // Configurar tu SQLiteOpenHelper para obtener la instancia de la base de datos
             PlaceDBHelper dbHelper = new PlaceDBHelper(this);
             database = dbHelper.getWritableDatabase();
         }
-
         private void guardarNombreEnTabla(String nombre) {
-            // Aquí deberás escribir el código para guardar el nombre en la tabla "usuarios"
-            // Puedes utilizar una sentencia SQL INSERT o utilizar métodos de SQLiteOpenHelper
-            // para realizar la inserción de datos en la base de datos.
 
-            // Ejemplo de código para realizar la inserción utilizando un ContentValues:
             ContentValues values = new ContentValues();
             values.put("nombre", nombre);
             long resultado = database.insert("usuarios", null, values);
 
             if (resultado != -1) {
-                // Éxito al guardar el nombre
                 Toast.makeText(this, "Nombre guardado correctamente", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, InformationActivity.class);
                 startActivity(intent);
             } else {
-                // Error al guardar el nombre
                 Toast.makeText(this, "Error al guardar el nombre", Toast.LENGTH_SHORT).show();
             }
         }
