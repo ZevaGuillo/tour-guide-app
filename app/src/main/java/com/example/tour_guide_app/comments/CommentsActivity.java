@@ -19,10 +19,9 @@ public class CommentsActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.texto_lugarmostrar);
         textView.setText(nombre);
 
-
-
-
-
+        String nombre1 = getIntent().getStringExtra("nombreu");
+        TextView textViewnombre = findViewById(R.id.texto_usuariomostrar);
+        textViewnombre.setText(nombre1 + " deja un comentario");
 
 
     }

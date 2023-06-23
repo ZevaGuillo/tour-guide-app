@@ -20,7 +20,6 @@ import com.example.tour_guide_app.comments.CommentsActivity;
 
 public class DescripcionActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,21 +53,43 @@ public class DescripcionActivity extends AppCompatActivity {
 
         Button boton_comentarios = findViewById(R.id.btn_comentarios);
 
-
-
         boton_comentarios.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
+                String ultimoNombre = obtenerUltimoNombre();
                 Intent intent = new Intent(DescripcionActivity.this, CommentsActivity.class);
-
+                intent.putExtra("nombreu", ultimoNombre);
                 intent.putExtra("nombre", nombre);
                 startActivity(intent);
             }
         });
 
     }
+    PlaceDBHelper dbHelper = new PlaceDBHelper(this);
+    private String obtenerUltimoNombre() {
+        String ultimoNombre = "";
 
+        // Obtener una instancia de la base de datos
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+        // Definir la consulta para obtener el último nombre ingresado
+        String query = "SELECT nombre FROM usuarios ORDER BY ROWID DESC LIMIT 1";
+
+        // Ejecutar la consulta y obtener el resultado
+        Cursor cursor = db.rawQuery(query, null);
+
+        // Verificar si se encontraron registros
+        if (cursor != null && cursor.moveToFirst()) {
+            // Obtener el valor del nombre en la primera columna
+            ultimoNombre = cursor.getString(0);
+            cursor.close();
+        }
+
+        // Cerrar la conexión a la base de datos
+        db.close();
+
+        return ultimoNombre;
+    }
 }
 
 
