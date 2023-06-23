@@ -20,6 +20,7 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
+
     private List<MyData> dataList;
     private int[] staticImages = {R.drawable.malecon2000, R.drawable.guayarte,R.drawable.parquesamanes,
             R.drawable.cerrosantana, R.drawable.parquehistorico, R.drawable.parqueseminario, R.drawable.restaurantepatio,

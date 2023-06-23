@@ -52,6 +52,7 @@ public class DescripcionActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(DescripcionActivity.this, CommentsActivity.class);
+                intent.putExtra("nombre", nombre);
                 startActivity(intent);
             }
         });
