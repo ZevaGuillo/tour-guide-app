@@ -31,9 +31,20 @@
 
             <TextView
                 android:id="@+id/texto_usuariomostrar"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:background="#009688"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#009688"
+                android:text="deja tu comentario"
                 android:textColor="#FFFFFF"
                 android:textSize="26sp"
                 android:textStyle="bold" />
@@ -53,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:numStars="5"
-            android:progressTint="#FFEB3B"
+            android:progressTint="#E91E63"
             android:rating="0" />
 
         <EditText

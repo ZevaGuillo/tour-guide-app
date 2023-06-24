@@ -84,7 +84,6 @@ public class DescripcionActivity extends AppCompatActivity {
             ultimoNombre = cursor.getString(0);
             cursor.close();
         }
-
         // Cerrar la conexión a la base de datos
         db.close();
 
