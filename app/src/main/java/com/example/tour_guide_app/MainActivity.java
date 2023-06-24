@@ -73,6 +73,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(this, "Error al guardar el nombre", Toast.LENGTH_SHORT).show();
             }
-        }
 
+        }
 }
