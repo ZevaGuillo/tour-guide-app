@@ -21,7 +21,8 @@
 
         <activity
             android:name=".maps.MapsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".information.InformationActivity"/>
         <activity
             android:name=".information.InformationActivity"
             android:exported="false" />
@@ -30,7 +31,8 @@
             android:exported="false" />
         <activity
             android:name=".comments.CommentsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".information.InformationActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -30,5 +30,11 @@
         app:showAsAction="never"
         />
 
+    <item
+        android:id="@+id/menu_opcion4"
+        android:title="Cerrar Sesion"
+        android:icon="@drawable/icon_arrow"
+        app:showAsAction="never"
+        />
 </menu>
 

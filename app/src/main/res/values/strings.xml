@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">tour-guide-app</string>
+    <string name="app_name">GuayaTourist</string>
     <string name="opcion_informacion">Información</string>
     <string name="opcion_comentarios">Comentarios</string>
     <string name="opcion_mapa">Mapa</string>

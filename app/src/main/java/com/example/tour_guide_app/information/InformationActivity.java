@@ -3,6 +3,7 @@ package com.example.tour_guide_app.information;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.icu.text.IDNA;
 import android.os.Bundle;
 
 import com.example.tour_guide_app.DataBase.PlaceDBHelper;
@@ -30,6 +31,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -166,6 +168,11 @@ public class InformationActivity extends AppCompatActivity {
             // Lógica para la opción 3
             Intent intent = new Intent(InformationActivity.this, MapsActivity.class);
             startActivity(intent);
+            return true;
+        } else if (itemId == R.id.menu_opcion4){
+            Intent intent = new Intent(InformationActivity.this, MainActivity.class);
+            startActivity(intent);
+            Toast.makeText(this, "Sesión Cerrada", Toast.LENGTH_SHORT);
             return true;
         } else {
             return super.onOptionsItemSelected(item);
