@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tour_guide_app.DataBase.PlaceDBHelper;
+import com.example.tour_guide_app.MainActivity;
 import com.example.tour_guide_app.R;
 import com.example.tour_guide_app.information.DescripcionActivity;
 import com.example.tour_guide_app.information.InformationActivity;
@@ -74,6 +75,8 @@ public class CommentsActivity extends AppCompatActivity {
                 cv.put("puntuacion", rtn_bar.getRating());
                 db.insert("valoraciones", null, cv);
                 Toast.makeText(view.getContext(), "Valoracion enviada", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CommentsActivity.this, InformationActivity.class);
+                startActivity(intent);
                 db.close();
             }
         });
